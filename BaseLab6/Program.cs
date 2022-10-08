@@ -18,10 +18,9 @@ class Program
 
     private static BigInteger FactorialByRec(int num)
     {
-        int x
         BigInteger fact = BigInteger.One;
-        if (x == 0) return 1;
-        return x * FactorialByRec(x - 1);
+        if (num == 0) return 1;
+        return num * FactorialByRec(num - 1);
     }
 
     static BigInteger Factorial(int x)
